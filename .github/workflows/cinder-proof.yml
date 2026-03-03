@@ -1,0 +1,13 @@
+name: cinder-proof
+on:
+  workflow_dispatch:
+jobs:
+  cargo-build:
+    runs-on: [self-hosted, cinder]
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build fixture
+        run: cargo build --locked
+      - name: Run fixture
+        run: cargo run --locked
