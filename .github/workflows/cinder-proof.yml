@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build fixture
-        run: cargo build --locked
+        run: cargo build --locked --release
       - name: Run fixture
-        run: cargo run --locked
+        run: cargo run --locked --release
