@@ -7,6 +7,7 @@ edition = "2021"
 anyhow = "1"
 chrono = { version = "0.4", features = ["serde"] }
 clap = { version = "4.5", features = ["derive"] }
+datafusion = "=43.0.0"
 flate2 = "1"
 rand = "0.9"
 regex = "1"
